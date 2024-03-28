@@ -511,7 +511,7 @@ button:not(:disabled),
    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
    --bs-btn-disabled-color: #fff;
    --bs-btn-disabled-bg: #dc3545;
-   --bs-btn-disabled-border-color: #dc3545;
+   --bs-btn-disabled-border-color: #dc3546;
 }
 
 .btn-dark {
