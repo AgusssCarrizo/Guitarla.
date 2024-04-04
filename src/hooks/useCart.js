@@ -1,11 +1,10 @@
-import {useState, useEffect} from "react";
+import {useState, useEffect, useMemo} from "react";
 import {db} from "../data/db";
-import {useMemo} from "react";
 
 export const useCart = () => {
    const initalCart = () => {
-      JSON.parse(localStorage.getItem("cart"));
-      return localStorage ? JSON.parse(localStorage.getItem("cart")) : [];
+      const localStorageCart = localStorage.getItem("cart");
+      return localStorageCart ? JSON.parse(localStorageCart) : [];
    };
    const [data] = useState(db);
    const [cart, setCart] = useState(initalCart);
